@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+    .text-box {
+        font-size: 12px;
+        width: 20rem;
+    }
+
+    .dl-btn {
+        width: 10rem;
+        font-size: 12px;
+        padding: 2px;
+        justify-content: center;
+    }
+
+    .dl-icon {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,106 @@
+.input-box {
+    width: 500px;
+    display: block;
+}
+
+form.input-box span {
+    color: red;
+}
+
+input, textarea {
+    font-size: 24px;
+    border: 2px solid rgb(5, 5, 5);
+    width: 100%;
+    height: 62px;
+    padding: 12px 10px 0px 10px;
+    box-shadow: 3px 3px #2f8fb9;
+    display: block;
+}
+
+label {
+    display: block;
+    transform: translateY(-50px);
+    font-size: 25px;
+    pointer-events: none;
+    padding-left: 11px;
+    height: 37px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid rgb(38, 229, 159) ;
+    box-shadow: none;
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: 0;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 1;
+}
+
+input:focus-within + label, input:valid + label  {
+    transition: transform 0.1s ease; 
+    font-size: 14px;
+    transform: translateY(-59px);
+    color: rgb(38, 229, 159);
+}
+
+input:valid, textarea:valid {
+    outline: none;
+    border: 2px solid rgb(38, 229, 159);
+    box-shadow: none;
+}
+
+.msg-label {
+    transform: translateY(-210px);
+}
+
+textarea {
+    resize: none;
+    padding-top: 25px;
+    height: 215px;
+}
+
+textarea:focus-within + .msg-label , textarea:valid + .msg-label{
+    transition: transform 0.1s ease; 
+    font-size: 14px;
+    color: rgb(38, 229, 159);
+}
+
+button {
+    width: 120px;
+    background-color: #92DEFF;
+    /* background-color: rgb(38, 229, 159); */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form .input-box{
+        width: 300px;
+    }
+
+    .social-cont {
+        width: 300px;
+        height: 170px;
+    }
+
+    .social-cont ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .socials, a{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

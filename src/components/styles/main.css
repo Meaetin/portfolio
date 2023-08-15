@@ -1,0 +1,39 @@
+@keyframes floatUP {
+    0% {
+        transform: 0;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#backdrop {
+    transform: translateY(500px);
+    animation: 1s ease 0s forwards floatUP;
+}
+
+#man {
+    transform: translateY(500px);
+    animation: 1s ease 0.1s forwards floatUP;
+}
+
+.title {
+    transform: translateY(200px);
+    animation: 1s ease 0.1s forwards floatUP;
+}
+
+@media screen and (max-width: 600px) {
+    .svg-cont svg{
+        padding-top: 4rem;
+        width: 350px;
+        height: auto;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+}
