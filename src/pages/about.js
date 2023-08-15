@@ -17,7 +17,7 @@ const About = () => {
                     over the course of a year.
                 </p><br/>
                 <p>
-                    I know that it is nowhere near enough hence I took a break from studying to look for front-end related 
+                    I know that this is nowhere near enough hence I took a break from studying to look for front-end related 
                     internships to further strengthen my skills.
                 </p>
             </div>
